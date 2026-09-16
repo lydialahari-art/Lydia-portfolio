@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Pen</title>
+  </head>
+  <body>
+    
+    <header>  <!-- Container tag-->  <!-- Can not be repeted-->
+    <h1>Lydia Lahari</h1>
+    <p>I am a student from Sridevi Women's engineering college.</p>
+    </header>
+
+    <nav>  <!-- Container tag-->  <!-- Can not be repeted-->
+    <ul>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Intership">Interships</a></li>
+      <li><a href="#Certificates">Certificates</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#contact me">Contact Me</a></li>
+      <li><a href="#admin-login" id="admin">Admin Login</a></li>
+    </ul>
+    </nav>
+    <button id="theme">Toggle Theme</button>
+    <section id="Education" class="app-1">  <!-- Container tag-->  <!-- Can be used multiple times-->
+    <h2>Education</h2>
+
+    <div id="1st-stage" class="stages">
+    <h3>School</h3>
+    <p>st.Ann's high schhol</p>
+    <p>2021</p>
+    </div>
+
+    <div id="2st-stage" class="stages">
+    <h3>Intermediate</h3>
+    <p>Sri Chaithanya</p>
+    <p>2024</p>
+    </div>
+
+    <div id="3st-stage" class="stages">
+    <h3>B.tech,CSE</h3>
+    <p>Sridevi Women's engineering college</p>
+    <p>2028</p>
+    </div>
+    </section>
+    
+    <section id="Intership" class="app-2">  <!-- Container tag-->  <!-- Can be used multiple times-->
+    <h2>Intership</h2>
+
+    <div id="1st-work" class="stages-1">
+    <h3>Forge</h3>
+    <p>GenAI</p>
+    <p>2025</p>
+    </div>
+
+    <div id="2st-work" class="stages-1">
+    <h3>InternForge</h3>
+    <p>Web development</p>
+    <p>2026</p>
+    </div>
+    </section>
+
+    <section id="Certificates" class="app-1">  <!-- Container tag-->  <!-- Can be used multiple times-->
+    <h2>Certificates</h2>
+
+    <div id="1st-Certi" class="stages">
+    <h3>College sports fest</h3>
+    <p>Volenteer</p>
+    <p>2024</p>
+    </div>
+
+    <div id="2st-Certi" class="stages">
+    <h3>Hackathon</h3>
+    <p>paricipation</p>
+    <p>2025</p>
+    </div>
+    </section>
+
+    <section id="Projects" class="app-2">  <!-- Container tag-->  <!-- Can be used multiple times-->
+    <h2>Projects</h2>
+
+    <div id="1st-Proj" class="stages-1">
+    <h3>Smart Indian hackathon</h3>
+    <p>Smart dustbin</p>
+    <p>2024</p>
+    </div>
+
+    <div id="2st-Proj" class="stages-1">
+    <h3>GenAI Hackathon</h3>
+    <p>Smart Study</p>
+    <p>2025</p>
+    </div>
+
+    <div id="3st-Proj" class="stages-1">
+    <h3>Hackathon</h3>
+    <p>Sign Transulator</p>
+    <p>2025</p>
+    </div>
+    </section>
+
+    <section id="contact me" class="app-1">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form"> <!-- form validation -->
+        <div>
+        <label>Name</label>
+        <input type="text" id="input-name" required> 
+        </div><br>
+        
+        <div>
+        <label>Email</label>
+        <input type="email" id="input-email" required>
+        </div><br>
+
+        <div>
+        <label>Message</label>
+        <textarea id="input-msg" required></textarea>
+        </div><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="admin-login" class="app-2">
+      <h2>Admin Login</h2>
+      <form id="admin-form">
+        <div>
+          <label>Username</label>
+          <input type="text" id="input-username" required>
+        </div><br>
+
+        <div>
+          <label>Password</label>
+          <input type="password" id="input-password" required>
+        </div><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="user-response" class="app-1">
+      <h2>User Response</h2>
+      <div id="user-messages">
+        <!-- since we don't know how many messages we get so we just leave it empty-->
+        <!--And by using javascript we will get to know that how many messages we are getting-->
+      </div>
+    </section>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

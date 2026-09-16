@@ -1,0 +1,146 @@
+header {
+  text-align: center;
+  border: 10px groove #ff0066;
+  background: linear-gradient(60deg,#ff8c1a 0%, #ff6666 30%, #ff4dff );
+  animation: slideIn 5s infinite;
+}
+nav {
+  background-color: #9999ff;
+  border-radius: 30px;
+  padding:1 rem;
+}
+/*child parent relationship (where nav is the parent of ul)*/
+nav ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;  /* brings to next line without breaking the words */
+}
+nav ul li a{
+  margin:10px;
+  text-decoration: None;
+  padding: 6px;
+  color:#000099;
+}
+nav ul li a:hover{
+  color: #cc0000;
+  border: solid 3px black;
+}
+
+.app-1{
+  margin:10px;
+  padding:0.3rem;
+  background-color: #99ff99;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+.app-2{
+  margin:10px;
+  padding:0.3rem;
+  background-color: #66ccff;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+.app-1 h2{
+  color: #000000;
+  font-size: 2rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid  #006600;
+}
+
+.app-2 h2{
+  color: #000000;
+  font-size: 2rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid   #2e2eb8;
+}
+
+.stages{
+  border-left:4px solid  #003300;
+  border-right:4px solid  #003300;
+  border-radius:20px;
+  margin:10px;
+  margin-right: 5rem;
+  padding:0.3rem;
+}
+
+.stages-1{
+  border-left:4px solid  #000066;
+  border-right:4px solid  #000066;
+  border-radius:20px;
+  margin:10px;
+  margin-right: 5rem;
+  padding:0.3rem;
+}
+
+.stages:hover{
+  border-left:40px solid #003300;
+  transform:translateX(40px);
+}
+
+.stages-1:hover{
+  border-left:40px solid  #000066;
+  transform:translateX(40px);
+}
+
+#theme{
+  position: fixed;
+  top:20px;
+  right:20px;
+  background-color:#2e2e1f;
+  color:#f5f5f0;
+  border-radius:8px;
+  animation : float 3s infinite;
+}
+
+@keyframes float{
+  0%,100%{
+    transform:translateY(0px);
+  }
+  50% {
+    transform:translateY(10px);
+  }
+}
+
+#admin-login {
+  display: None;
+}
+
+#user-response{
+  display:None;
+}
+
+.dark-theme{
+  background-color:#34495c;
+}
+
+.dark-theme header{
+  background-color:#34495e;
+  color:#fff;
+  border-top:10px solid #344495e;
+  border-left:10px solid #344495e;
+  border-right:10px solid #344495e;
+}
+
+.dark-theme nav{
+  background-color:#4da6ff;
+}
+
+.dark-theme nav ul li a{
+  color:#002080;
+}
+
+@keyframes slideIn {
+  from{
+    opacity: 0; /*transparent */
+    transform:translateX(-50px);
+  }
+  to {
+    opacity: 1; /*transparent */
+    transform:translateX(0px);
+  }
+}
